@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Live camera preview – fills entire screen -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraFeaturePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scaleType="fillCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Shape-aware overlay drawn on top of the preview -->
+    <com.bridge.translator.ui.ShapeOverlayView
+        android:id="@+id/shapeOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Translated result replaces the preview after processing -->
+    <ImageView
+        android:id="@+id/ivCameraFeatureResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:background="#000000"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ── Top bar ── -->
+    <LinearLayout
+        android:id="@+id/cameraFeatureTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:gravity="center_vertical"
+        android:background="#99000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Close -->
+        <ImageView
+            android:id="@+id/btnCameraFeatureClose"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/text_primary"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Close" />
+
+        <!-- Title + status -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Scan"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCameraFeatureStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Point camera at text on a shape"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+        <!-- Shape count badge -->
+        <TextView
+            android:id="@+id/tvCameraFeatureShapeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:textColor="@color/text_primary"
+            android:textSize="11sp"
+            android:background="#446200EE"
+            android:text=""
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <!-- Processing progress bar (thin strip under top bar) -->
+    <ProgressBar
+        android:id="@+id/cameraFeatureProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:progressTint="@color/accent_cyan"
+        app:layout_constraintTop_toBottomOf="@id/cameraFeatureTopBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ── Bottom action bar ── -->
+    <LinearLayout
+        android:id="@+id/cameraFeatureBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="20dp"
+        android:gravity="center"
+        android:background="#99000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Speaker button (left) -->
+        <ImageView
+            android:id="@+id/btnCameraFeatureSpeaker"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_speaker"
+            android:tint="@color/text_primary"
+            android:alpha="0.4"
+            android:enabled="false"
+            android:background="@drawable/bg_bubble"
+            android:contentDescription="Speak translation"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Capture FAB (centre) -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnCameraFeatureCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/ic_camera"
+            app:backgroundTint="@color/primary"
+            app:fabSize="normal"
+            android:contentDescription="Capture and translate" />
+
+        <!-- Share / save placeholder (right) -->
+        <ImageView
+            android:id="@+id/btnCameraFeatureShare"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_share"
+            android:tint="@color/text_primary"
+            android:background="@drawable/bg_bubble"
+            android:contentDescription="Share"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

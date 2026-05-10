@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="accent_cyan">#7AC8FF</color>
+    <color name="accent_green">#69F0AE</color>
+    <color name="accent_red">#FF5252</color>
+    <color name="badge_active_bg">#1B3D2F</color>
+    <color name="badge_grant_bg">#3D1B2A</color>
+    <color name="bottom_nav_bg">#161627</color>
+    <color name="bottom_nav_icon">#7E7E91</color>
+    <color name="card_bg">#23233B</color>
+    <color name="divider">#33334A</color>
+    <color name="history_card_1">#23233B</color>
+    <color name="history_card_2">#2E2232</color>
+    <color name="icon_bg_blue">#21324B</color>
+    <color name="icon_bg_cyan">#21324B</color>
+    <color name="icon_bg_green">#1B3D2F</color>
+    <color name="icon_bg_pink">#35243B</color>
+    <color name="icon_bg_purple">#2F2B48</color>
+    <color name="icon_bg_red">#3D1B2A</color>
+    <color name="premium_bg">#2D1B69</color>
+    <color name="screen_bg">#1A1A2E</color>
+    <color name="search_bg">#2A2A42</color>
+    <color name="stroke_color">#33334A</color>
+    <color name="text_accent_blue">#7AC8FF</color>
+    <color name="text_accent_pink">#FA8FB8</color>
+    <color name="text_accent_purple">#B8A4E6</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A9A9BC</color>
+    <style name="Theme.BridgeTranslator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/text_accent_purple</item>
+        <item name="colorPrimaryVariant">@color/text_accent_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/text_accent_blue</item>
+        <item name="colorSecondaryVariant">@color/text_accent_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="29">false</item>
+        <item name="android:enforceStatusBarContrast" ns1:targetApi="29">false</item>
+        <item name="android:enforceNavigationBarContrast" ns1:targetApi="29">false</item>
+    </style>
+    <style name="Theme.BridgeTranslator.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

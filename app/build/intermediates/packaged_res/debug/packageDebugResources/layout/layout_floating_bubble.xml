@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout kept for the legacy FloatingBubbleService in com.example.bridgetranslator.
+     The refactored service (com.bridge.translator) builds its bubble programmatically. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/iv_bubble"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bubble"
+        android:src="@drawable/ic_bubble"
+        android:tint="@android:color/white"
+        android:padding="14dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/floating_bubble" />
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6200EE</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_background">#1C1B1F</color>
+    <color name="on_background_secondary">#49454F</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="error">#B00020</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bubble_active">#6200EE</color>
+
+    <color name="screen_bg">#1A1A2E</color>
+    <color name="card_bg">#23233B</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A9A9BC</color>
+    <color name="text_accent_purple">#B8A4E6</color>
+    <color name="text_accent_blue">#7AC8FF</color>
+    <color name="text_accent_pink">#FA8FB8</color>
+    <color name="accent_green">#69F0AE</color>
+    <color name="accent_red">#FF5252</color>
+    <color name="accent_cyan">#7AC8FF</color>
+    <color name="icon_bg_purple">#2F2B48</color>
+    <color name="icon_bg_blue">#21324B</color>
+    <color name="icon_bg_pink">#35243B</color>
+    <color name="icon_bg_green">#1B3D2F</color>
+    <color name="icon_bg_red">#3D1B2A</color>
+    <color name="icon_bg_cyan">#21324B</color>
+    <color name="stroke_color">#33334A</color>
+    <color name="bottom_nav_bg">#161627</color>
+    <color name="bottom_nav_icon">#7E7E91</color>
+    <color name="premium_bg">#2D1B69</color>
+    <color name="badge_active_bg">#1B3D2F</color>
+    <color name="badge_grant_bg">#3D1B2A</color>
+    <color name="search_bg">#2A2A42</color>
+    <color name="history_card_1">#23233B</color>
+    <color name="history_card_2">#2E2232</color>
+    <color name="divider">#33334A</color>
+
+    <!-- Shape overlay colors (CameraFeatureActivity) -->
+    <color name="shapeOverlay">#33448AFF</color>
+    <color name="shapeOverlayBorder">#FF448AFF</color>
+    <color name="shapeHighlight">#4400E5FF</color>
+    <color name="shapeHighlightBorder">#FF00E5FF</color>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bridge Translator</string>
+    <string name="grant_overlay_permission">Grant Overlay Permission</string>
+    <string name="start_bubble">Start Floating Bubble</string>
+    <string name="stop_bubble">Stop Floating Bubble</string>
+    <string name="status_running">Running</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="service_status">Service Status</string>
+    <string name="permission_granted">Overlay permission granted</string>
+    <string name="permission_required">Overlay permission required</string>
+    <string name="close">Close</string>
+    <string name="select_area">Select Area</string>
+    <string name="tap_to_select">Tap to select a region on screen</string>
+    <string name="floating_bubble">Floating bubble</string>
+    <string name="accessibility_service_description">Detect screen changes so Bridge Translator can refresh translated overlays.</string>
+    <string name="input_bridge_accessibility_description">Bridge translates your typing across all apps.</string>
+    <string name="bridge_keyboard_name">Bridge Keyboard</string>
+    <string name="bridge_keyboard_settings">Bridge Keyboard settings</string>
+</resources>

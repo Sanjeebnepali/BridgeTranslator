@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Live camera preview fills entire screen -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scaleType="fillCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFrozenTranslation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/documentVisualScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:fillViewport="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivDocumentTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitStart" />
+    </ScrollView>
+
+    <com.example.bridgetranslator.DocumentFrameView
+        android:id="@+id/documentFrameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Top bar overlay -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBarCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AA000000"
+        android:paddingVertical="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivTranslateIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/app_logo"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bridge Camera"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/ivTranslateIcon"
+            app:layout_constraintEnd_toStartOf="@id/btnShareVisual"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/btnShareVisual"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Share translated page"
+            app:layout_constraintEnd_toStartOf="@id/btnDownloadVisual"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_share"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnDownloadVisual"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Download translated page"
+            app:layout_constraintEnd_toStartOf="@id/btnSpeakTranslation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_download"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnSpeakTranslation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Speak translated text"
+            app:layout_constraintEnd_toStartOf="@id/ivHistoryNav"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/ivSpeakIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_volume"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ivHistoryNav"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_history"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Language selector pill: [AUTO detected] | [Target tap to change] -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLangPill"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#BB000000"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#55FFFFFF"
+        app:strokeWidth="1dp"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@id/topBarCamera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Left: auto-detected source (read-only) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="12dp">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_search"
+                    app:tint="#80FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tvDetectedLang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUTO"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#55FFFFFF" />
+
+            <!-- Right: user-selected target (clickable) -->
+            <LinearLayout
+                android:id="@+id/btnTargetLangPill"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <TextView
+                    android:id="@+id/tvTargetLangLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ES"
+                    android:textColor="@color/accent_cyan"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/ic_expand_more"
+                    app:tint="@color/accent_cyan" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Scan status badge -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardScanStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="#BB1A1B29"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cardLangPill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvScanStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanning..."
+            android:textColor="#AAFFFFFF"
+            android:textSize="12sp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Translation result card (bottom overlay) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTranslationResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#EE1A1B29"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardScanStatus"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- Drag handle -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#4A4A62"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Readable text areas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Translated -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:id="@+id/tvTranslatedLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TRANSLATED"
+                        android:textColor="@color/accent_cyan"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="#16243A"
+                        app:cardCornerRadius="18dp"
+                        app:strokeColor="#3B5F95"
+                        app:strokeWidth="1dp"
+                        app:cardElevation="0dp">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/tvTranslatedText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Translation appears here..."
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                android:lineSpacingExtra="6dp"
+                                android:padding="18dp" />
+                        </ScrollView>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <!-- Original -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvOriginalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORIGINAL"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="#232336"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/tvOriginalText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Point camera at text..."
+                                android:textColor="#CCFFFFFF"
+                                android:textSize="15sp"
+                                android:lineSpacingExtra="3dp"
+                                android:padding="12dp" />
+                        </ScrollView>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2E2E4A"
+                android:layout_marginVertical="14dp" />
+
+            <!-- Action row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnSaveTranslation"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#15FFFFFF"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_star"
+                        app:tint="@color/accent_cyan" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save to history"
+                    android:textColor="#88C0D0"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnCopyTranslation"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#15FFFFFF"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_content_copy"
+                        app:tint="@color/white" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Bottom action bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#EE0F101A"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Gallery icon -->
+        <LinearLayout
+            android:id="@+id/btnGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnFilePicker"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_screen"
+                app:tint="@color/text_secondary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GALLERY"
+                android:textColor="@color/text_secondary"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- File picker icon (center) -->
+        <LinearLayout
+            android:id="@+id/btnFilePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toEndOf="@id/btnGallery"
+            app:layout_constraintEnd_toStartOf="@id/btnClose"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                app:cardBackgroundColor="#1D2A43"
+                app:cardCornerRadius="26dp"
+                app:strokeColor="#2F426D"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard"
+                    app:tint="@color/accent_cyan" />
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FILE"
+                android:textColor="@color/accent_cyan"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Close icon -->
+        <LinearLayout
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toEndOf="@id/btnFilePicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_close"
+                app:tint="@color/text_secondary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLOSE"
+                android:textColor="@color/text_secondary"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

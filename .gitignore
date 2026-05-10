@@ -1,0 +1,58 @@
+# Build files and directories
+*.apk
+*.ap_
+*.class
+*.dex
+*.jar
+*.rar
+*.zip
+*.gz
+*.tar
+*.rar
+*.log
+
+# Local configuration file (sdk.dir, etc.)
+local.properties
+
+# Gradle files
+.gradle/
+build/
+gradle-wrapper.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+.classpath
+.project
+.settings/
+.sublime-*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Signing keys
+*.keystore
+*.jks
+
+# Generated files
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+*.pub
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Misc
+.gradle
+.idea

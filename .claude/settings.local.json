@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ping *)",
+      "Bash(npm update *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\BridgeTranslator\" -Force)",
+      "Bash(Select-Object -Property Name, PSIsContainer)",
+      "Bash(.\\\\gradlew compileDebugKotlin)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
+    ]
+  }
+}

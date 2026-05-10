@@ -1,0 +1,270 @@
+[
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_expand_more.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_expand_more.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_item_history_card.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_history_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_keyboard.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_keyboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_bg_gradient_unlock.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\bg_gradient_unlock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_overlay.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_globe.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_globe.xml"
+    },
+    {
+        "merged": "com.example.bridgetranslator.app-debug-4:/layout_activity_translate.xml.flat",
+        "source": "com.example.bridgetranslator.app-main-6:/layout/activity_translate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_layout_transparent_overlay.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\layout_transparent_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_camera.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_speaker.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_speaker.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_content_copy.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_content_copy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_help.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_layout_floating_bubble.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\layout_floating_bubble.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\mipmap-xxhdpi_app_logo.png.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\mipmap-xxhdpi\\app_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\xml_accessibility_config.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\xml\\accessibility_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_history.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_dialog_progress.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\dialog_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_bubble_active_gradient.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\bubble_active_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_swap.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_swap.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\mipmap-hdpi_app_logo.png.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\mipmap-hdpi\\app_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\xml_bridge_keyboard_method.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\xml\\bridge_keyboard_method.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_item_onboarding_page.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_onboarding_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\mipmap-xxxhdpi_app_logo.png.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\mipmap-xxxhdpi\\app_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_share.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "com.example.bridgetranslator.app-debug-4:/layout_activity_home.xml.flat",
+        "source": "com.example.bridgetranslator.app-main-6:/layout/activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\mipmap-mdpi_app_logo.png.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\mipmap-mdpi\\app_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\xml_input_bridge_accessibility_config.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\xml\\input_bridge_accessibility_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_bubble.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_bubble.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_translate.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_translate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_screen.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_camera_feature.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_camera_feature.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_bg_gradient_button.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\bg_gradient_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\mipmap-xhdpi_app_logo.png.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\mipmap-xhdpi\\app_logo.png"
+    },
+    {
+        "merged": "com.example.bridgetranslator.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.example.bridgetranslator.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_item_language.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_language.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_item_history_header.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_history_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_offline.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_offline.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_accessibility.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_accessibility.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_overlay.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_star.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_star.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_volume.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_volume.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\anim_pulse_animation.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\anim\\pulse_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable-nodpi_app_logo.png.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable-nodpi\\app_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_download.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_download.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_shield.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_shield.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_bg_dashed_stroke.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\bg_dashed_stroke.xml"
+    },
+    {
+        "merged": "com.example.bridgetranslator.app-debug-4:/xml_file_paths.xml.flat",
+        "source": "com.example.bridgetranslator.app-main-6:/xml/file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_bg_bubble.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\bg_bubble.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_activity_translate.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_translate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\layout_bottom_sheet_language.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\bottom_sheet_language.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_translate_bg_gradient.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\translate_bg_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-debug-4:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\drawable\\ic_check.xml"
+    }
+]

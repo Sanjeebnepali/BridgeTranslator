@@ -1,0 +1,501 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.bridgetranslator"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:4:5-78
+11-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:4:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:5:5-67
+12-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:6:5-77
+13-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:7:5-77
+14-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:8:5-71
+15-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:8:22-68
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+16-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:9:5-94
+16-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:9:22-91
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:10:5-65
+17-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:10:22-62
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:11:5-81
+18-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:11:22-78
+19
+20    <uses-feature
+20-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:13:5-85
+21        android:name="android.hardware.camera"
+21-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:13:19-57
+22        android:required="false" />
+22-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:13:58-82
+23
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:7:5-79
+24-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:7:22-76
+25
+26    <permission
+26-->[androidx.core:core:1.13.1] C:\Users\Sanju\.gradle\caches\transforms-4\8e96f9e789a319018466034ccd775481\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+27        android:name="com.example.bridgetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.13.1] C:\Users\Sanju\.gradle\caches\transforms-4\8e96f9e789a319018466034ccd775481\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.13.1] C:\Users\Sanju\.gradle\caches\transforms-4\8e96f9e789a319018466034ccd775481\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.example.bridgetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.13.1] C:\Users\Sanju\.gradle\caches\transforms-4\8e96f9e789a319018466034ccd775481\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.13.1] C:\Users\Sanju\.gradle\caches\transforms-4\8e96f9e789a319018466034ccd775481\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:15:5-153:19
+33        android:name="com.bridge.translator.MyApplication"
+33-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:16:9-59
+34        android:allowBackup="true"
+34-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:17:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.13.1] C:\Users\Sanju\.gradle\caches\transforms-4\8e96f9e789a319018466034ccd775481\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:icon="@mipmap/app_logo"
+38-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:18:9-40
+39        android:label="@string/app_name"
+39-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:19:9-41
+40        android:roundIcon="@mipmap/app_logo"
+40-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:20:9-45
+41        android:supportsRtl="true"
+41-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:21:9-35
+42        android:testOnly="true"
+43        android:theme="@style/Theme.BridgeTranslator" >
+43-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:22:9-54
+44        <activity
+44-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:24:9-31:20
+45            android:name="com.example.bridgetranslator.OnboardingActivity"
+45-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:25:13-75
+46            android:exported="true" >
+46-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:26:13-36
+47            <intent-filter>
+47-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:27:13-30:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:28:17-69
+48-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:28:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:29:17-77
+50-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:29:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:33:9-35:40
+54            android:name="com.example.bridgetranslator.HomeActivity"
+54-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:34:13-69
+55            android:exported="false" />
+55-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:35:13-37
+56        <activity
+56-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:37:9-39:40
+57            android:name="com.example.bridgetranslator.CameraActivity"
+57-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:38:13-71
+58            android:exported="false" />
+58-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:39:13-37
+59
+60        <!-- Shape-aware live-scan camera with per-shape translation & TTS -->
+61        <activity
+61-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:42:9-46:62
+62            android:name="com.example.bridgetranslator.CameraFeatureActivity"
+62-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:43:13-78
+63            android:configChanges="orientation|screenSize"
+63-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:46:13-59
+64            android:exported="true"
+64-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:44:13-36
+65            android:screenOrientation="portrait" />
+65-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:45:13-49
+66        <activity
+66-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:48:9-50:40
+67            android:name="com.example.bridgetranslator.TranslateActivity"
+67-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:49:13-74
+68            android:exported="false" />
+68-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:50:13-37
+69        <activity
+69-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:52:9-54:40
+70            android:name="com.example.bridgetranslator.HistoryActivity"
+70-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:53:13-72
+71            android:exported="false" />
+71-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:54:13-37
+72        <activity
+72-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:56:9-58:40
+73            android:name="com.example.bridgetranslator.SettingsActivity"
+73-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:57:13-73
+74            android:exported="false" />
+74-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:58:13-37
+75        <activity
+75-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:60:9-62:40
+76            android:name="com.bridge.translator.ui.main.MainActivity"
+76-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:61:13-70
+77            android:exported="false" />
+77-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:62:13-37
+78        <activity
+78-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:64:9-69:49
+79            android:name="com.bridge.translator.ui.overlay.OverlayActivity"
+79-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:65:13-76
+80            android:excludeFromRecents="true"
+80-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:69:13-46
+81            android:exported="false"
+81-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:66:13-37
+82            android:taskAffinity=""
+82-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:68:13-36
+83            android:theme="@style/Theme.BridgeTranslator.Overlay" />
+83-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:67:13-66
+84        <activity
+84-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:71:9-76:39
+85            android:name="com.example.bridgetranslator.ScreenCapturePermissionActivity"
+85-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:72:13-88
+86            android:excludeFromRecents="true"
+86-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:75:13-46
+87            android:exported="false"
+87-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:73:13-37
+88            android:taskAffinity=""
+88-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:76:13-36
+89            android:theme="@style/Theme.BridgeTranslator.Overlay" />
+89-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:74:13-66
+90
+91        <provider
+92            android:name="androidx.core.content.FileProvider"
+92-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:79:13-62
+93            android:authorities="com.example.bridgetranslator.fileprovider"
+93-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:80:13-64
+94            android:exported="false"
+94-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:81:13-37
+95            android:grantUriPermissions="true" >
+95-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:82:13-47
+96            <meta-data
+96-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:83:13-85:54
+97                android:name="android.support.FILE_PROVIDER_PATHS"
+97-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:84:17-67
+98                android:resource="@xml/file_paths" />
+98-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:85:17-51
+99        </provider>
+100
+101        <service
+101-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:88:9-91:63
+102            android:name="com.bridge.translator.service.FloatingBubbleService"
+102-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:89:13-79
+103            android:exported="false"
+103-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:90:13-37
+104            android:foregroundServiceType="mediaProjection" />
+104-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:91:13-60
+105        <service
+105-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:93:9-103:19
+106            android:name="com.bridge.translator.service.TranslatorAccessibilityService"
+106-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:94:13-88
+107            android:exported="true"
+107-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:95:13-36
+108            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+108-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:96:13-79
+109            <intent-filter>
+109-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:97:13-99:29
+110                <action android:name="android.accessibilityservice.AccessibilityService" />
+110-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:98:17-92
+110-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:98:25-89
+111            </intent-filter>
+112
+113            <meta-data
+113-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:100:13-102:64
+114                android:name="android.accessibilityservice"
+114-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:101:17-60
+115                android:resource="@xml/accessibility_config" />
+115-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:102:17-61
+116        </service>
+117        <service
+117-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:105:9-115:19
+118            android:name="com.bridge.translator.service.BridgeAccessibilityService"
+118-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:106:13-84
+119            android:exported="true"
+119-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:107:13-36
+120            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+120-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:108:13-79
+121            <intent-filter>
+121-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:97:13-99:29
+122                <action android:name="android.accessibilityservice.AccessibilityService" />
+122-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:98:17-92
+122-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:98:25-89
+123            </intent-filter>
+124
+125            <meta-data
+125-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:100:13-102:64
+126                android:name="android.accessibilityservice"
+126-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:101:17-60
+127                android:resource="@xml/input_bridge_accessibility_config" />
+127-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:102:17-61
+128        </service>
+129        <service
+129-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:117:9-128:19
+130            android:name="com.bridge.translator.keyboard.BridgeKeyboardService"
+130-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:118:13-80
+131            android:exported="true"
+131-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:119:13-36
+132            android:label="@string/bridge_keyboard_name"
+132-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:120:13-57
+133            android:permission="android.permission.BIND_INPUT_METHOD" >
+133-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:121:13-70
+134            <intent-filter>
+134-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:122:13-124:29
+135                <action android:name="android.view.InputMethod" />
+135-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:123:17-67
+135-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:123:25-64
+136            </intent-filter>
+137
+138            <meta-data
+138-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:125:13-127:66
+139                android:name="android.view.im"
+139-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:126:17-47
+140                android:resource="@xml/bridge_keyboard_method" />
+140-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:127:17-63
+141        </service>
+142
+143        <activity
+143-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:130:9-132:40
+144            android:name="com.bridge.translator.ui.LanguageSelectorActivity"
+144-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:131:13-77
+145            android:exported="false" />
+145-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:132:13-37
+146
+147        <receiver
+147-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:134:9-141:20
+148            android:name="com.example.bridgetranslator.BootReceiver"
+148-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:135:13-69
+149            android:enabled="true"
+149-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:136:13-35
+150            android:exported="false" >
+150-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:137:13-37
+151            <intent-filter>
+151-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:138:13-140:29
+152                <action android:name="android.intent.action.BOOT_COMPLETED" />
+152-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:139:17-79
+152-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:139:25-76
+153            </intent-filter>
+154        </receiver>
+155
+156        <provider
+157            android:name="androidx.core.content.FileProvider"
+157-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:79:13-62
+158            android:authorities="com.example.bridgetranslator.fileprovider"
+158-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:80:13-64
+159            android:exported="false"
+159-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:81:13-37
+160            android:grantUriPermissions="true" >
+160-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:82:13-47
+161            <meta-data
+161-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:83:13-85:54
+162                android:name="android.support.FILE_PROVIDER_PATHS"
+162-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:84:17-67
+163                android:resource="@xml/file_paths" />
+163-->C:\BridgeTranslator\app\src\main\AndroidManifest.xml:85:17-51
+164        </provider>
+165
+166        <!--
+167        Service for holding metadata. Cannot be instantiated.
+168        Metadata will be merged from other manifests.
+169        -->
+170        <service
+170-->[androidx.camera:camera-core:1.4.1] C:\Users\Sanju\.gradle\caches\transforms-4\b2969435fe9a7f781a2ee6a0182c0f2e\transformed\camera-core-1.4.1\AndroidManifest.xml:29:9-33:78
+171            android:name="androidx.camera.core.impl.MetadataHolderService"
+171-->[androidx.camera:camera-core:1.4.1] C:\Users\Sanju\.gradle\caches\transforms-4\b2969435fe9a7f781a2ee6a0182c0f2e\transformed\camera-core-1.4.1\AndroidManifest.xml:30:13-75
+172            android:enabled="false"
+172-->[androidx.camera:camera-core:1.4.1] C:\Users\Sanju\.gradle\caches\transforms-4\b2969435fe9a7f781a2ee6a0182c0f2e\transformed\camera-core-1.4.1\AndroidManifest.xml:31:13-36
+173            android:exported="false" >
+173-->[androidx.camera:camera-core:1.4.1] C:\Users\Sanju\.gradle\caches\transforms-4\b2969435fe9a7f781a2ee6a0182c0f2e\transformed\camera-core-1.4.1\AndroidManifest.xml:32:13-37
+174            <meta-data
+174-->[androidx.camera:camera-camera2:1.4.1] C:\Users\Sanju\.gradle\caches\transforms-4\016eac8c1a1bb645b99e8e30e19c4246\transformed\camera-camera2-1.4.1\AndroidManifest.xml:30:13-32:89
+175                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+175-->[androidx.camera:camera-camera2:1.4.1] C:\Users\Sanju\.gradle\caches\transforms-4\016eac8c1a1bb645b99e8e30e19c4246\transformed\camera-camera2-1.4.1\AndroidManifest.xml:31:17-103
+176                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+176-->[androidx.camera:camera-camera2:1.4.1] C:\Users\Sanju\.gradle\caches\transforms-4\016eac8c1a1bb645b99e8e30e19c4246\transformed\camera-camera2-1.4.1\AndroidManifest.xml:32:17-86
+177        </service>
+178        <service
+178-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:11:9-17:19
+179            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+179-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:12:13-91
+180            android:directBootAware="true"
+180-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:17:13-43
+181            android:exported="false" >
+181-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:13:13-37
+182            <meta-data
+182-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:14:13-16:85
+183                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+183-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:15:17-126
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.mlkit:translate:17.0.3] C:\Users\Sanju\.gradle\caches\transforms-4\3f26ee0d2e7c94957a9e2b8cfe7ba808\transformed\translate-17.0.3\AndroidManifest.xml:16:17-82
+185            <meta-data
+185-->[com.google.mlkit:language-id:17.0.6] C:\Users\Sanju\.gradle\caches\transforms-4\b7a42c44629740514e9f1c0576e4dfa5\transformed\language-id-17.0.6\AndroidManifest.xml:11:13-13:85
+186                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.bundled.internal.ThickLanguageIdRegistrar"
+186-->[com.google.mlkit:language-id:17.0.6] C:\Users\Sanju\.gradle\caches\transforms-4\b7a42c44629740514e9f1c0576e4dfa5\transformed\language-id-17.0.6\AndroidManifest.xml:12:17-135
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.mlkit:language-id:17.0.6] C:\Users\Sanju\.gradle\caches\transforms-4\b7a42c44629740514e9f1c0576e4dfa5\transformed\language-id-17.0.6\AndroidManifest.xml:13:17-82
+188            <meta-data
+188-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] C:\Users\Sanju\.gradle\caches\transforms-4\4e24d6a7768e1e762407f882cfa47025\transformed\play-services-mlkit-text-recognition-common-19.1.0\AndroidManifest.xml:12:13-14:85
+189                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+189-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] C:\Users\Sanju\.gradle\caches\transforms-4\4e24d6a7768e1e762407f882cfa47025\transformed\play-services-mlkit-text-recognition-common-19.1.0\AndroidManifest.xml:13:17-114
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] C:\Users\Sanju\.gradle\caches\transforms-4\4e24d6a7768e1e762407f882cfa47025\transformed\play-services-mlkit-text-recognition-common-19.1.0\AndroidManifest.xml:14:17-82
+191            <meta-data
+191-->[com.google.mlkit:language-id-common:16.1.0] C:\Users\Sanju\.gradle\caches\transforms-4\31f79f661c393eee8566256c07b522eb\transformed\language-id-common-16.1.0\AndroidManifest.xml:26:13-28:85
+192                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar"
+192-->[com.google.mlkit:language-id-common:16.1.0] C:\Users\Sanju\.gradle\caches\transforms-4\31f79f661c393eee8566256c07b522eb\transformed\language-id-common-16.1.0\AndroidManifest.xml:27:17-122
+193                android:value="com.google.firebase.components.ComponentRegistrar" />
+193-->[com.google.mlkit:language-id-common:16.1.0] C:\Users\Sanju\.gradle\caches\transforms-4\31f79f661c393eee8566256c07b522eb\transformed\language-id-common-16.1.0\AndroidManifest.xml:28:17-82
+194            <meta-data
+194-->[com.google.mlkit:vision-common:17.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\d02f5facefe047a7b26b820cd4ec788d\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+195                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+195-->[com.google.mlkit:vision-common:17.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\d02f5facefe047a7b26b820cd4ec788d\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
+196                android:value="com.google.firebase.components.ComponentRegistrar" />
+196-->[com.google.mlkit:vision-common:17.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\d02f5facefe047a7b26b820cd4ec788d\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
+197            <meta-data
+197-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:20:13-22:85
+198                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+198-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:21:17-120
+199                android:value="com.google.firebase.components.ComponentRegistrar" />
+199-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:22:17-82
+200        </service>
+201
+202        <provider
+202-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:9:9-13:38
+203            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+203-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:10:13-78
+204            android:authorities="com.example.bridgetranslator.mlkitinitprovider"
+204-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:11:13-69
+205            android:exported="false"
+205-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:12:13-37
+206            android:initOrder="99" />
+206-->[com.google.mlkit:common:18.11.0] C:\Users\Sanju\.gradle\caches\transforms-4\3e4a39936e3f0c8d7fe6eb7c97588dc4\transformed\common-18.11.0\AndroidManifest.xml:13:13-35
+207
+208        <activity
+208-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Sanju\.gradle\caches\transforms-4\a03ff40dfe88aa77dde0aadd393d4761\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+209            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+209-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Sanju\.gradle\caches\transforms-4\a03ff40dfe88aa77dde0aadd393d4761\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+210            android:exported="false"
+210-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Sanju\.gradle\caches\transforms-4\a03ff40dfe88aa77dde0aadd393d4761\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+211            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+211-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Sanju\.gradle\caches\transforms-4\a03ff40dfe88aa77dde0aadd393d4761\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+212
+213        <meta-data
+213-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Sanju\.gradle\caches\transforms-4\dd6c5a7b3aa080818a8f23a6c8acd40d\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+214            android:name="com.google.android.gms.version"
+214-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Sanju\.gradle\caches\transforms-4\dd6c5a7b3aa080818a8f23a6c8acd40d\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+215            android:value="@integer/google_play_services_version" />
+215-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Sanju\.gradle\caches\transforms-4\dd6c5a7b3aa080818a8f23a6c8acd40d\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+216
+217        <provider
+217-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\8e328afa83ecd43817fc9f1104d32f06\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+218            android:name="androidx.startup.InitializationProvider"
+218-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\8e328afa83ecd43817fc9f1104d32f06\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+219            android:authorities="com.example.bridgetranslator.androidx-startup"
+219-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\8e328afa83ecd43817fc9f1104d32f06\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+220            android:exported="false" >
+220-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\8e328afa83ecd43817fc9f1104d32f06\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+221            <meta-data
+221-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\8e328afa83ecd43817fc9f1104d32f06\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+222                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+222-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\8e328afa83ecd43817fc9f1104d32f06\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+223                android:value="androidx.startup" />
+223-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sanju\.gradle\caches\transforms-4\8e328afa83ecd43817fc9f1104d32f06\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+224            <meta-data
+224-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Sanju\.gradle\caches\transforms-4\08573b921071445cf4bd3c29473165b0\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+225                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+225-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Sanju\.gradle\caches\transforms-4\08573b921071445cf4bd3c29473165b0\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+226                android:value="androidx.startup" />
+226-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Sanju\.gradle\caches\transforms-4\08573b921071445cf4bd3c29473165b0\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+227            <meta-data
+227-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+228                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+228-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+229                android:value="androidx.startup" />
+229-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+230        </provider>
+231
+232        <service
+232-->[androidx.room:room-runtime:2.6.1] C:\Users\Sanju\.gradle\caches\transforms-4\e37f0d43d77a885b395af67ea8958511\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+233            android:name="androidx.room.MultiInstanceInvalidationService"
+233-->[androidx.room:room-runtime:2.6.1] C:\Users\Sanju\.gradle\caches\transforms-4\e37f0d43d77a885b395af67ea8958511\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+234            android:directBootAware="true"
+234-->[androidx.room:room-runtime:2.6.1] C:\Users\Sanju\.gradle\caches\transforms-4\e37f0d43d77a885b395af67ea8958511\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+235            android:exported="false" />
+235-->[androidx.room:room-runtime:2.6.1] C:\Users\Sanju\.gradle\caches\transforms-4\e37f0d43d77a885b395af67ea8958511\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+236
+237        <receiver
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+238            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+239            android:directBootAware="false"
+239-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+240            android:enabled="true"
+240-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+241            android:exported="true"
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+242            android:permission="android.permission.DUMP" >
+242-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+243            <intent-filter>
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+244                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+245            </intent-filter>
+246            <intent-filter>
+246-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+247                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+248            </intent-filter>
+249            <intent-filter>
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+250                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+250-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+250-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+251            </intent-filter>
+252            <intent-filter>
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+253                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Sanju\.gradle\caches\transforms-4\56e0ec01ae8d110fcb3f363c4673c229\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+254            </intent-filter>
+255        </receiver>
+256
+257        <service
+257-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Sanju\.gradle\caches\transforms-4\48f0189a4b15b7ec4971365cdcbe083f\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+258            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+258-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Sanju\.gradle\caches\transforms-4\48f0189a4b15b7ec4971365cdcbe083f\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+259            android:exported="false" >
+259-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Sanju\.gradle\caches\transforms-4\48f0189a4b15b7ec4971365cdcbe083f\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+260            <meta-data
+260-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Sanju\.gradle\caches\transforms-4\48f0189a4b15b7ec4971365cdcbe083f\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+261                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+261-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Sanju\.gradle\caches\transforms-4\48f0189a4b15b7ec4971365cdcbe083f\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+262                android:value="cct" />
+262-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Sanju\.gradle\caches\transforms-4\48f0189a4b15b7ec4971365cdcbe083f\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+263        </service>
+264        <service
+264-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Sanju\.gradle\caches\transforms-4\aaea4b3312cbe90ba39907321ca6ed00\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+265            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+265-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Sanju\.gradle\caches\transforms-4\aaea4b3312cbe90ba39907321ca6ed00\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+266            android:exported="false"
+266-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Sanju\.gradle\caches\transforms-4\aaea4b3312cbe90ba39907321ca6ed00\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+267            android:permission="android.permission.BIND_JOB_SERVICE" >
+267-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Sanju\.gradle\caches\transforms-4\aaea4b3312cbe90ba39907321ca6ed00\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+268        </service>
+269
+270        <receiver
+270-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Sanju\.gradle\caches\transforms-4\aaea4b3312cbe90ba39907321ca6ed00\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+271            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+271-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Sanju\.gradle\caches\transforms-4\aaea4b3312cbe90ba39907321ca6ed00\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+272            android:exported="false" />
+272-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Sanju\.gradle\caches\transforms-4\aaea4b3312cbe90ba39907321ca6ed00\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+273    </application>
+274
+275</manifest>

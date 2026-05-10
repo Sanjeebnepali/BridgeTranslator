@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/screen_bg"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/app_logo"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="History"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivClearAll"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_close"
+                android:padding="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- Search Bar (functional EditText) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/search_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_search"
+                    app:tint="@color/text_secondary" />
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Search history..."
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Filter row: ALL / STARRED -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/filterAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALL"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/bubble_active"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/filterStarred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STARRED"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:background="@color/search_bg"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Empty state -->
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_history"
+            app:tint="@color/stroke_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No translations yet"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your saved translations will appear here"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+    <!-- History list -->
+
+    <!-- Bottom Navigation -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="280dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        app:cardBackgroundColor="@color/bottom_nav_bg"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_home"
+                    app:tint="@color/bottom_nav_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:textColor="@color/bottom_nav_icon"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navTranslate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_translate"
+                    app:tint="@color/bottom_nav_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRANSLATE"
+                    android:textColor="@color/bottom_nav_icon"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navHistory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    app:cardBackgroundColor="@color/bubble_active"
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_history"
+                        app:tint="@color/white" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_settings"
+                    app:tint="@color/bottom_nav_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SETTINGS"
+                    android:textColor="@color/bottom_nav_icon"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

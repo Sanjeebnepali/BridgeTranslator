@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_onboarding.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_camera.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\item_history_header.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_history_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_translate.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_translate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\layout_floating_bubble.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\layout_floating_bubble.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\layout_transparent_overlay.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\layout_transparent_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\item_language.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_language.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_history.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\item_onboarding_page.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_onboarding_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_overlay.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_overlay.xml"
+    },
+    {
+        "merged": "com.example.bridgetranslator.app-mergeDebugResources-3:/layout/activity_home.xml",
+        "source": "com.example.bridgetranslator.app-main-6:/layout/activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_camera_feature.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_camera_feature.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\item_history_card.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\item_history_card.xml"
+    },
+    {
+        "merged": "com.example.bridgetranslator.app-mergeDebugResources-3:/layout/activity_translate.xml",
+        "source": "com.example.bridgetranslator.app-main-6:/layout/activity_translate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\bottom_sheet_language.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\bottom_sheet_language.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\dialog_progress.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\dialog_progress.xml"
+    },
+    {
+        "merged": "com.example.bridgetranslator.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.example.bridgetranslator.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-mergeDebugResources-3:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\Sanju\\.gradle\\daemon\\8.7\\com.example.bridgetranslator.app-main-6:\\layout\\activity_home.xml"
+    }
+]

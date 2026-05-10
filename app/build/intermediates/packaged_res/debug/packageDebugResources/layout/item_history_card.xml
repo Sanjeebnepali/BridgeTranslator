@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="2dp"
+    app:cardBackgroundColor="@color/card_bg"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/stroke_color"
+    app:strokeWidth="1dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Top row: lang pair + time + star -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvLangPair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EN -> ES"
+                android:textColor="@color/text_accent_blue"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="@color/icon_bg_blue"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="14:22"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivStar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_star"
+                android:padding="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/bottom_nav_icon" />
+        </LinearLayout>
+
+        <!-- Source text -->
+        <TextView
+            android:id="@+id/tvSourceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello, how are you?"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:layout_marginTop="14dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Result text -->
+        <TextView
+            android:id="@+id/tvResultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hola, ¿cómo estás?"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Action row: copy + delete -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/ivCopy"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_content_copy"
+                android:padding="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/text_secondary" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_close"
+                android:padding="6dp"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/accent_red" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

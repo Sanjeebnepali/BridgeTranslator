@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BridgeTranslator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/text_accent_purple</item>
+        <item name="colorPrimaryVariant">@color/text_accent_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/text_accent_blue</item>
+        <item name="colorSecondaryVariant">@color/text_accent_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+    </style>
+
+    <style name="Theme.BridgeTranslator.Overlay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
